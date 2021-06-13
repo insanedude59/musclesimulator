@@ -4,7 +4,7 @@ local section1 = a:NewSection("Autofarms")
 local section2 = a:NewSection("Player")
 section1:Toggle("Autofarm", function(value)
     weightlift = value
-    while weightlift do wait(0.3)
+    while weightlift do wait(0.5)
  for i,v in pairs(game:GetDescendants()) do
     if v.Name == "Pushups" and v.Parent ~= game.Players.LocalPlayer.Backpack then
     game:GetService("VirtualUser"):ClickButton1(Vector2.new())
