@@ -8,7 +8,7 @@ section1:Toggle("Autofarm", function(value)
  for i,v in pairs(game:GetDescendants()) do
     if v.Name == "Pushups" and v.Parent ~= game.Players.LocalPlayer.Backpack then
     game:GetService("VirtualUser"):ClickButton1(Vector2.new())
-    elseif v.Parent == game.Players.LocalPlayer.Backpack and v.Name ~= "Combat" then
+    elseif v.Parent == game.Players.LocalPlayer.Backpack and v.Name ~= "Combat" and v.Name ~= "Stomp" then
     game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
     end
  end
