@@ -3,6 +3,8 @@ local a = library:NewWindow("Shitty", " game")
 local section1 = a:NewSection("Autofarms")
 local section2 = a:NewSection("Player")
 section1:Toggle("Autofarm", function(value)
+     game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(500,500,500)
     weightlift = value
     while weightlift do wait(0.5)
  for i,v in pairs(game:GetDescendants()) do
@@ -12,7 +14,11 @@ section1:Toggle("Autofarm", function(value)
     game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
     end
  end
- end
+    end
+while weightlift == false do wait(1)
+     game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
 end)
 
 section2:Slider("WalkSpeed", 9,500,function(a)
