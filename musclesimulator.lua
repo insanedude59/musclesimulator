@@ -15,7 +15,7 @@ section1:Toggle("Autofarm", function(value)
     end
  end
     end
-while weightlift == false do wait(1)
+if weightlift == false then
      game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
     end
