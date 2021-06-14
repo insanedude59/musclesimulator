@@ -22,11 +22,11 @@ if weightlift == false then
     end
 end)
 
-section2:Slider("WalkSpeed", 9,500,function(a)
+section2:Slider("WalkSpeed", 9,200,function(a)
     local player = game.Players.LocalPlayer
     player.Character.Humanoid.WalkSpeed = a
 end)
 
-section2:Slider("JumpPower", 50,500,function(a)
+section2:Slider("JumpPower", 50,200,function(a)
     player.Character.Humanoid.JumpPower = a
 end)
