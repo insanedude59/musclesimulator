@@ -8,7 +8,7 @@ section1:Toggle("Autofarm", function(value)
         hum.CFrame = CFrame.new(1000,1000,1000)
     weightlift = value
     while weightlift do wait(0.5)
- for i,v in pairs(game:GetDescendants()) do
+ for i,v in pairs(game:GetChildren()) do
     if v.Name == "Pushups" and v.Parent ~= game.Players.LocalPlayer.Backpack then
     game:GetService("VirtualUser"):ClickButton1(Vector2.new())
     elseif v.Parent == game.Players.LocalPlayer.Backpack and v.Name ~= "Combat" and v.Name ~= "Stomp" then
