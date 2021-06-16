@@ -5,7 +5,7 @@ local section2 = a:NewSection("Player")
 section1:Toggle("Autofarm", function(value)
           local hum = game.Players.LocalPlayer.Character.HumanoidRootPart
      hum.Anchored = true
-        hum.CFrame = CFrame.new(500,500,500)
+        hum.CFrame = CFrame.new(1000,1000,1000)
     weightlift = value
     while weightlift do wait(0.5)
  for i,v in pairs(game:GetDescendants()) do
